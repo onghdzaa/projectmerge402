@@ -84,10 +84,10 @@
                    <td> <div class="text-right">
                      
                      <label class="badge badge-success" v-if="sv.status == 'เสร็จสิ้น'">
-                        <i class="fa fa-check-square-o" style="color:black"></i> {{sv.status}}
+                        <i class="fa fa-check-square-o" style="color:white"></i> {{sv.status}}
                      </label>
-                      <label class="badge badge-warning"  style="background-color:#FFCC33;" v-if="sv.status != 'เสร็จสิ้น'">
-                        <i class="fa fa-hourglass" style="color:black"></i> {{sv.status}}
+                      <label class="badge badge-warning"  style="width:100%; background-color:#FFCC33;" v-if="sv.status != 'เสร็จสิ้น'">
+                        <i class="fa fa-hourglass" style="color:white"></i> {{sv.status}}
                      </label>
                      <!-- เชื่อมกับสถานะเพื่อเปลี่ยนไอคอน -->
                        <!-- <label class="badge badge-success" v-if="sv.status == 'เสร็จสิ้น'">

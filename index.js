@@ -534,7 +534,7 @@ app.get("/calender/today/sum", async (req, res) => {
 // หยุดการทำงาน ลูกค้า
 app.put("/stop", async (req, res) => {
   try {
-    //console.log(req.body.id);
+    console.log(req);
     const allLogin = await pool.query(
       "UPDATE reserve SET working_member = 0 , status='เสร็จสิ้น' WHERE id=$1",
       [req.body.id]
